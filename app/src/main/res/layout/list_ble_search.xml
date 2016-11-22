@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:id="@+id/rl_all"
+    android:background="@drawable/selector_normal"
+    android:layout_height="55dp">
+
+    <ImageView
+        android:id="@+id/img_search_item"
+        android:padding="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ble_led_unadded"
+        />
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/img_search_item"
+        android:layout_toLeftOf="@+id/img_next"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/tv_search_name"
+            android:layout_marginTop="5dp"
+            android:text="000000"
+            android:textSize="20dp"
+            android:layout_width="180dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_search_addr"
+            android:text="111111"
+            android:textSize="13dp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_search_name"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add_device"
+        android:text="@string/add_new_device"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:background="#BEBEBF"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_next"-->
+        <!--android:src="@mipmap/settings_next"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</RelativeLayout>

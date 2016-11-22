@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center_vertical"
+            android:text="@string/add_alarm"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/return_alarm_list" />
+
+        <Button
+            android:id="@+id/return_alarm_list"
+            android:text="   "
+            android:background="@mipmap/left"
+            android:layout_marginLeft="6dp"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ble_colorful_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--时间-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:text="@string/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:text="14:52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:textSize="18dp"
+                        android:layout_alignStart="@+id/textView" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_select_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/download_img_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@color/lightgray"/>
+
+            <!--重复-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_repeat"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toStartOf="@+id/cb_is_repeat">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:text="@string/repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:text="2016-10-19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:textSize="18dp"
+                        android:layout_alignStart="@+id/textView" />
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/cb_is_repeat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="14sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@color/lightgray"/>
+
+            <!--开关灯-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:text="@string/on_or_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_action"
+                        android:text="@string/timing_lights"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView33"
+                        android:textSize="18dp"
+                        android:layout_alignStart="@+id/textView" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_actionon"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/view_case"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+    <!--底部按钮-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <Button
+            android:text="@string/cancel"
+            android:padding="0dp"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/btn_cancel" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:padding="0dp"
+            android:text="@string/save"
+            android:textSize="12dp"
+            android:textColor="#FF00A2FF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/btn_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>

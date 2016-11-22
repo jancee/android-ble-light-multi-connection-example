@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jancee="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/llProgress"
+        android:background="@drawable/shape_dialog_bg"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <!--<RotateLoading-->
+            <!--android:id="@+id/rotateloading"-->
+            <!--jancee:loading_visible="false"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!---->
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_frame"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/progreeTextView"
+                android:layout_below="@+id/img_frame"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#c0000000"
+                android:text="loading..." />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

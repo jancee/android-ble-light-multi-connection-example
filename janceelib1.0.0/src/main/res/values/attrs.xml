@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <!--//==============密码输入框=======-->
+    <!-- 没啥用好像 -->
+    <dimen name="default_ev_border_width">1dp</dimen>
+    <dimen name="default_ev_password_width">10dp</dimen>
+
+    <!-- 有用的 -->
+    <color name="default_ev_border_color">#CACBCC</color>
+    <color name="default_ev_password_color">#000000</color>
+    <dimen name="default_ev_border_radius">1dp</dimen>
+    <dimen name="default_ev_password_radius">8dp</dimen>
+    <integer name="default_ev_password_length">6</integer>
+
+    <!--
+    <dimen name="custom_ev_border_width">1dp</dimen>
+    <dimen name="custom_ev_border_radius">10dp</dimen>
+    <dimen name="custom_ev_password_width">1dp</dimen>
+    -->
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+        <attr name="passwordRadius" format="dimension" />
+    </declare-styleable>
+</resources>

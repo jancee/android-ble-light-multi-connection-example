@@ -1,0 +1,74 @@
+<resources>
+
+
+    <string name="app_name">GV Single Color</string>
+
+
+    <string name="ble_reconnected">Reconnected</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="ble_device_list">Device List</string>
+    <string name="ble_ungrouped">Ungrouped</string>
+    <string name="ble_add_group">Add Group</string>
+    <string name="ble_group_num_detail">deveices</string>
+    <string name="please_input_group_name">Please input group name</string>
+    <string name="ble_move_to_group">Move group to...</string>
+    <string name="ble_rename">Rename</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="please_select_group">Please select group</string>
+    <string name="please_add_group_first">No Group Exits</string>
+    <string name="ble_remove_from_group">Remove from Group</string>
+    <string name="tab_color">Color</string>
+    <string name="tab_music">Music</string>
+    <string name="error_group_max">faill,Each group has three most the lamp!</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="music_select">Select Music</string>
+    <string name="error_connect_overtime">Connect overtime,please retry!</string>
+    <string name="delete_group">Delete group</string>
+    <string name="please_input_led_name">Please input new name</string>
+    <string name="disconnected">Disconnected!</string>
+    <string name="music_rock">Rock</string>
+    <string name="music_default_mode">Default</string>
+    <string name="music_jazz">Jazz</string>
+    <string name="music_classical">Classical</string>
+    <string name="press_again_exit">Press again to exit!</string>
+    <string name="please_add_led_first">Please add device first!</string>
+    <string name="color_mode1">1.Combination</string>
+    <string name="color_mode2">2.Steady-on</string>
+    <string name="color_mode3">3.In waves</string>
+    <string name="color_mode4">4.Sequential</string>
+    <string name="color_mode5">5.Chasing/Flash</string>
+    <string name="color_mode6">6.SLO-GLO</string>
+    <string name="color_mode7">7.Step on</string>
+    <string name="color_mode8">8.Slow fade</string>
+    <string name="color_mode9">9.One-light chasing</string>
+    <string name="color_mode10">10.Triple in wave</string>
+    <string name="color_mode11">11.Mixed chasing</string>
+    <string name="color_mode12">12.Forward on/ reverse off</string>
+    <string name="color_mode13">13.Twinkle flash</string>
+    <string name="color_mode14">14.Four light flash</string>
+    <string name="color_mode15">15.Twin light flash</string>
+    <string name="color_mode16">16.Step on/ Slow fade</string>
+    <string name="add_alarm">Add alarm</string>
+    <string name="save">Save</string>
+    <string name="timing_lights">Turn on</string>
+    <string name="timing_nolights">Turn off</string>
+    <string name="on_or_off">Turn on/Turn off</string>
+    <string name="repeat">Repeat</string>
+    <string name="time">Time</string>
+    <string name="current_time">Current Time</string>
+    <string name="please_sync_device">First of all synchronous equipment</string>
+    <string name="sync_alarm">Synchronized timing</string>
+    <string name="alarm">alarm</string>
+    <string name="alarm_list">Alarm List</string>
+    <string name="alarm_warming">Note: if the device back to electricity, timing function will fail, need to restart the app for time synchronization</string>
+    <string name="settime">Set Time</string>
+    <string name="cancel_tp">Cancel</string>
+    <string name="ok_tp">OK</string>
+    <string name="set_date">Set Date</string>
+    <string name="add_new_device">Add Device</string>
+
+</resources>

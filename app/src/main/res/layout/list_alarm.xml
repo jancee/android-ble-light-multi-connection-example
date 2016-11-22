@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="16:36"
+            android:textIsSelectable="false"
+            android:id="@+id/tv_time"
+            android:textSize="24dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="false"
+            android:text="开"
+            android:id="@+id/tv_action"
+            android:layout_weight="0.27"
+            android:textSize="24dp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:textIsSelectable="false"
+            android:layout_height="wrap_content"
+            android:text="2016-10-31"
+            android:ems="10"
+            android:id="@+id/tv_date"
+            android:layout_weight="0.45"
+            android:textSize="13dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" />
+
+</LinearLayout>

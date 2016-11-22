@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangjingxi.outsourcing.gvsinglecolor">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--ble-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" />              <!-- 网络通信-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />     <!-- 获取WIFI MAC地址-->
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 获取logcat日志 -->
+
+    <application
+        android:name="com.wangjingxi.outsourcing.gvsinglecolor.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_gv"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="zaplites.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="11" />
+
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="
+            .entity.sqltab.MusicFavorTab,
+            .entity.sqltab.BleAddedTab,
+            .entity.sqltab.BleGroupTab,
+            .entity.sqltab.BleMemberTab,
+            .entity.sqltab.AlarmTab" />
+
+        <meta-data android:value="580dd9ff82b635545c0002f7" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="DebugPacketHandOut" android:name="UMENG_CHANNEL"/>
+
+        <!-- pgyer -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="39f6864e768eabe2b6a0dc4add0becb7" >
+        </meta-data>
+
+
+        <!-- 启动闪图Activity -->
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.activity.FlashActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 连接上灯以后的控制界面 Activity -->
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.MainActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- Fragment 调度 -->
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.ClickActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 闹灯添加 -->
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.AlertAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.AlertAddActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 闹灯列表 -->
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.AlertViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.app.AlertViewActivity_"
+            android:screenOrientation="portrait" />
+
+        <!-- 蓝牙服务 -->
+        <service
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.service.BleService_"
+            android:priority="1000" />
+
+        <!-- 音乐服务 -->
+        <service
+            android:name="com.wangjingxi.outsourcing.gvsinglecolor.service.MusicPlayerService_"
+            android:priority="1000" />
+
+
+    </application>
+
+</manifest>

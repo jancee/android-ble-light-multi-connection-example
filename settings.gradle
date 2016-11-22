@@ -1,0 +1,4 @@
+include ':app', ':circleprogressdialog1.0.0', ':liteble', ':janceelib'
+project(':circleprogressdialog1.0.0').projectDir = new File('circleprogressdialog')
+project(':liteble').projectDir = new File('janceeble')
+project(':janceelib').projectDir = new File('janceelib1.0.0')

@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+def AAVersion = '3.3.2'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.wangjingxi.outsourcing.gvsinglecolor"
+        minSdkVersion 18
+        targetSdkVersion 21
+        versionCode 1
+        versionName "2016.1022.01"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../signing_file_forcustomer.jks")
+            storePassword "cccccccccc0"
+            keyAlias "jancee"
+            keyPassword "cccccccccc0"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master" }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile files('libs/androidannotations-3.3.2.jar')
+    compile 'com.zxy.android:recovery:0.0.5'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.pgyersdk:sdk:2.4.0'
+    compile project(':circleprogressdialog1.0.0')
+    compile project(':liteble')
+    compile project(':janceelib')
+
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName "com.wangjingxi.outsourcing.gvsinglecolor"
+    }
+}

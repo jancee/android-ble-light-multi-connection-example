@@ -1,0 +1,74 @@
+<resources>
+
+
+
+    <string name="app_name">GV Single Color</string>
+
+    <string name="ble_reconnected">已重连</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="ble_device_list">设备列表</string>
+    <string name="ble_ungrouped">未分组设备</string>
+    <string name="ble_add_group">添加分组</string>
+    <string name="ble_group_num_detail">个设备</string>
+    <string name="please_input_group_name">请输入新的分组名称</string>
+    <string name="ble_move_to_group">移动到组...</string>
+    <string name="ble_rename">重命名</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="please_select_group">请选取分组</string>
+    <string name="please_add_group_first">无分组，请先添加分组</string>
+    <string name="ble_remove_from_group">从分组移除</string>
+    <string name="tab_color">颜色</string>
+    <string name="tab_music">音乐</string>
+    <string name="error_group_max">操作失败，每个分组最多有3个灯!</string>
+    <string name="please_wait">请稍候...</string>
+    <string name="music_select">选择音乐</string>
+    <string name="error_connect_overtime">连接超时，请重试!</string>
+    <string name="delete_group">删除分组</string>
+    <string name="please_input_led_name">请输入新名称</string>
+    <string name="disconnected">连接已断开!</string>
+    <string name="music_rock">摇滚</string>
+    <string name="music_default_mode">默认</string>
+    <string name="music_jazz">爵士</string>
+    <string name="music_classical">古典</string>
+    <string name="press_again_exit">再按一次退出程序</string>
+    <string name="please_add_led_first">请先添加灯!</string>
+    <string name="color_mode1">1.自动连续变换</string>
+    <string name="color_mode2">2.全亮</string>
+    <string name="color_mode3">3.波浪翻滚</string>
+    <string name="color_mode4">4.双灯跑马</string>
+    <string name="color_mode5">5.星星闪烁，跑马</string>
+    <string name="color_mode6">6.跑马且渐明渐暗</string>
+    <string name="color_mode7">7.单灯渐明渐暗</string>
+    <string name="color_mode8">8.双灯同时渐明渐暗</string>
+    <string name="color_mode9">9.单灯跑马</string>
+    <string name="color_mode10">10.慢波浪</string>
+    <string name="color_mode11">11.多段变换</string>
+    <string name="color_mode12">12.顺亮反灭</string>
+    <string name="color_mode13">13.跑马且星星闪烁</string>
+    <string name="color_mode14">14.全闪</string>
+    <string name="color_mode15">15.双闪、前后、左右</string>
+    <string name="color_mode16">16.孔雀开屏</string>
+    <string name="add_alarm">添加定时</string>
+    <string name="save">保存</string>
+    <string name="timing_lights">定时开灯</string>
+    <string name="timing_nolights">定时关灯</string>
+    <string name="on_or_off">开灯/关灯</string>
+    <string name="repeat">重复</string>
+    <string name="time">时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="sync_alarm">同步定时</string>
+    <string name="alarm">定时</string>
+    <string name="alarm_list">定时列表</string>
+    <string name="alarm_warming">注意：如果设备重新上电，定时功能将失效，需要重启app进行时间同步</string>
+    <string name="please_sync_device">请先同步设备</string>
+    <string name="settime">设置时间</string>
+    <string name="cancel_tp">取消</string>
+    <string name="ok_tp">确定</string>
+    <string name="set_date">设置日期</string>
+    <string name="add_new_device">添加新设备</string>
+
+</resources>

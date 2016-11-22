@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="scaleSeekbar_style" format="integer" />
+
+    <declare-styleable name="ScaleSeekbar">
+        <attr name="scaleSeekbar_style" />
+    </declare-styleable>
+
+</resources>

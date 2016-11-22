@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_list" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LedName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rl_switch">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/alarm_icon_colorful"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_alarm" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/switch_on"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_switch" />
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ble_colorful_line" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_top" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F9F9F9"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_color"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/tab_color_colorful" />
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_color"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_color"
+                android:textColor="@color/navigation_blue"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_music"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/tab_music_gray" />
+
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_music"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tab_music"
+                android:textColor="@color/navigation_gray"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
