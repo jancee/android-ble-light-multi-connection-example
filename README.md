@@ -1,2 +1,13 @@
 # Zaplite-Basic
-Cypress BLE芯片的蓝牙灯的Android APP的代码，供有需要的BLE开发参考
+
+<br/>
+
+## Introduce
+***
+An example of an actual project that connects and controls multiple bluetooth devices at the same time.
+
+<br/>
+
+## How to use?
+***
+ignore...
