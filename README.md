@@ -1,4 +1,4 @@
-# Zaplite-Basic
+# android-ble-light-multi-connection-example
 
 <br/>
 
